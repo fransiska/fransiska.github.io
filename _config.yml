@@ -8,8 +8,8 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
-tagline: Site Tagline
+title : furansui
+tagline: a blog
 author :
   name : furansui
   email : furansui@gmail.com
@@ -127,3 +127,6 @@ JB :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
   
+#add pagination
+paginate: 5
+paginate_path: "page:num"
