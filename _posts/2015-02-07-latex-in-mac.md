@@ -2,8 +2,10 @@
 layout: post
 title: "Latex in Mac"
 description: ""
-category: latex,mac
-tags: [latex,mac]
+category: latex
+tags:
+- mac
+- latex
 date: 2015-02-07 03:13:09
 ---
 {% include JB/setup %}

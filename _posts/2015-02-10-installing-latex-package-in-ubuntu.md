@@ -2,8 +2,10 @@
 layout: post
 title: "installing latex package in ubuntu"
 description: ""
-category: latex,ubuntu
-tags: [latex,ubuntu]
+category: latex
+tags:
+- latex
+- ubuntu
 date: 2015-02-10 11:11:28
 ---
 {% include JB/setup %}
