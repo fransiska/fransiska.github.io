@@ -6,6 +6,5 @@ group: navigation
 ---
 {% include JB/setup %}
 
-<h2>About me</h2>
-<ul>
-</ul>
+### this blog
+I blog about programming, computers, and other interests of mine.
