@@ -16,43 +16,48 @@ tagline: a blog
 <div class="row post-full">
   <div class="col-xs-12">
     <div class="date">
-      <span>{{ post.date | date: '%Y.%m.%d %H:%M' }}</span>
+      <span>{{ post.date | date: '%Y.%m.%d' }}</span>
     </div>
     <div class="post">
       {{ post.content }}
     </div>
     
-  {% unless post.categories == empty %}
+    {% unless post.categories == empty %}
     <ul class="tag_box inline">
       <li><span class="glyphicon glyphicon-open"></span></li>
       {% assign categories_list = post.categories %}
       {% include JB/categories_list %}
     </ul>
-  {% endunless %}  
-
-  {% unless post.tags == empty %}
+    {% endunless %}  
+    
+    {% unless post.tags == empty %}
     <ul class="tag_box inline">
       <li><span class="glyphicon glyphicon-tag"></span></li>
       {% assign tags_list = post.tags %}
       {% include JB/tags_list %}
     </ul>
-  {% endunless %}  
+    {% endunless %}  
 
+    <ul class="tag_box inline">
+      <li><span class="glyphicon glyphicon-comment"></span></li>
+      <li><a href="{{ post.url }}#disqus_thread"></a></li>
+    </ul>
+    
   </div>
 </div>
-    {% endfor %}
- 
+{% endfor %}
+
 <div class="row-fluid">
   <div class="span12">
     <div class="pagination">
       <ul class="pagination">
 
         {% if paginator.previous_page %}
-          {% if paginator.previous_page == 1 %}
-          <li><a href="/">Prev</a></li>
-          {% else %}
-          <li><a href="/page{{ paginator.previous_page }}">Prev</a></li>
-          {% endif %}
+        {% if paginator.previous_page == 1 %}
+        <li><a href="/">Prev</a></li>
+        {% else %}
+        <li><a href="/page{{ paginator.previous_page }}">Prev</a></li>
+        {% endif %}
         {% else %}
         <li><span class="disabled">Prev</span></li>
         {% endif %}
@@ -65,11 +70,11 @@ tagline: a blog
         {% endif %}
 
         {% for count in (2..paginator.total_pages) %}
-          {% if count == paginator.page %}
-          <li><span class="active">{{ count }}</span></li>
-          {% else %}
-          <li><a href="/page{{ count }}">{{ count }}</a></li>
-          {% endif %}
+        {% if count == paginator.page %}
+        <li><span class="active">{{ count }}</span></li>
+        {% else %}
+        <li><a href="/page{{ count }}">{{ count }}</a></li>
+        {% endif %}
         {% endfor %}
 
         {% if paginator.next_page %}
@@ -82,4 +87,4 @@ tagline: a blog
   </div>
 </div>
 
-
+<script id="dsq-count-scr" src="//{{ site.JB.comments.disqus.short_name }}.disqus.com/count.js" async></script>
