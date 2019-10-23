@@ -1,7 +1,9 @@
-layout: page
-title: "Budgeting with ledger-cli while tracking used points"
-date: 2019-10-24 hh:mm:ss -0000
-categories: ledger
+---
+layout: post
+title: Budgeting with ledger-cli while tracking used points
+category: ledger
+tags: [programming,ledger]
+---
 
 I want to be able to track how my expenses matches my budget. And to do that, as [other](https://sachachua.com/blog/2014/11/keeping-financial-score-ledger/) [people](https://emacs.cafe/ledger/emacs/ynab/budgeting/2018/06/12/elbank-ynab.html) also recommended, I used a feature in [ledger](https://www.ledger-cli.org/) called **virtual postings** and **automated transactions**.
 
