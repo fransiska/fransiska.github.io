@@ -16,3 +16,7 @@ It's difficult to decide on which system is of a better use for a particular cas
 
 - **Pro**: Easy to manage and scale
 - **Con**: Takes time to set up
+
+Apparently, Python Flask is also usable for production (eg. [Pinterest](https://www.quora.com/What-challenges-has-Pinterest-encountered-with-Flask/answer/Steve-Cohen)).
+
+To read: [NGINX](https://qr.ae/TD3jhV)
