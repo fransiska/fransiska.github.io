@@ -1,14 +1,18 @@
 ---
 layout: post
-title: Setting Up SSL Certificates in Apache
+title: Setting Up SSL Certificates in Apache (Part 1)
 category: web
 tags: [ssl,web,apache]
 ---
 
 I have not fully understood this, I will just detail out what I did. I used AWS AMI (version 1) and Apache (httpd).
 There are 2 things that I set up using SSL certificates:
-1. **HTTPS**: Setting up Certificate for HTTPS connection. This is the one that can be seen by clicking the lock button at the address bar of the web browser. By having https, data transfers between server and client are encrypted. The certificate
+1. **HTTPS**: Setting up Certificate for HTTPS connection. This certificate used for encryption that can be confirmed by clicking the lock button at the address bar of the web browser. By having https, data transfers between server and client are encrypted. The certificate
 2. **Client certificate**: Securing the connection by enforcing the use of a client certificate to connect to a server.
+
+### Setting up a web server in AWS
+
+I used AWS EC2, which is a Linux machine where you can ssh into. The OS image that I used was AWS AMI (version 1). Just like a normal Linux machine, we can set up a web server using Apache, which I won't detail out here.
 
 ### HTTPS
 
@@ -85,9 +89,10 @@ Steps:
       RewriteRule ^/(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
     </VirtualHost>
     ```
-#### DNS for subdomain
 
-### Client certificate
+### To write in the next part
 
-#### Server CA
-#### Client certificate
+- [ ] DNS for subdomain
+- [ ] Client certificate
+    - [ ] Server CA
+    - [ ] Client certificate
