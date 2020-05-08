@@ -45,4 +45,5 @@ The app needs to read/write from serial. Build in macOS Catalina. Error due to v
 	pip -V              # check if it comes from pyenv
 	pip install pyinstaller pyserial
 	```
-- Make the executable by `python -m PyInstaller test.py`, running pyinstaller directly didn't work
+- Make the executable by `python -m PyInstaller test.py`, running pyinstaller directly didn't work. This will create a folder with a bunch of libraries inside.
+- To generate one executable, `python -m PyInstaller -c --clean --onefile test.py`
