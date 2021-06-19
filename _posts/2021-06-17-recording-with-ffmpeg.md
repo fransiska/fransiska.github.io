@@ -30,3 +30,30 @@ And the stream mapping is
 Stream mapping:
   Stream #0:0 -> #0:0 (copy)
 ```
+
+### Camera controls
+
+(Resetted after reboot I think)
+
+```bash
+v4l2-ctl -d /dev/video3 -l
+v4l2-ctl -d /dev/video3 --set-ctrl zoom_absolute=125
+```
+
+To turn off camera's LED, where video3 is the same index as the `/dev/video3`
+
+```bash
+uvcdynctrl -d video3 -s 'LED1 Mode' 0
+```
+
+### Streaming to vlc in the same network
+
+Where `192.168.1.2` is the ip address of the viewer,
+
+```bash
+ffmpeg -f v4l2 -input_format mjpeg -s 800x600 -i /dev/video3 -tune zerolatency  -f mjpeg udp://192.168.1.2:23000?pkt_size=1316
+```
+
+In viewer's vlc, File -> Open Network `udp://@:23000?pkt_size=1316`
+
+
