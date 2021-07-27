@@ -199,6 +199,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-compose
+  jemoji
 
 BUNDLED WITH
-   1.13.7
+   1.17.2
