@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Editing subtitles and audio for video
+tags: [mac, ffmpeg, video]
 ---
 
 1. Took video with iPhone.

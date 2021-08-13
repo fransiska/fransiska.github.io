@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Markdown to PDF
+tags: [mac, latex, makefile, pandoc]
 ---
 
 MacBook Pro 2016, macOS Catalina, version 10.5.7

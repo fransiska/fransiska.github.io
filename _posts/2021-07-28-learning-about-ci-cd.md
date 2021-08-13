@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Gitlab Pages and Learning About CI/CD
+tags: [git, cicd]
 ---
 
 Just recently (duh!) I came to realize that Gitlab Pages is actually a CI/CD process. The automation of everything is so mind blowing!

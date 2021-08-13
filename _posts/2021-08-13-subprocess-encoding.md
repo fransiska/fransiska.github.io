@@ -1,6 +1,7 @@
 ---
 layout: post
-title: subprocess encoding
+title: Subprocess without shell
+tags: [python]
 ---
 
 I was googling for hours and I found no answer. I was also not really sure where the error happens. I found the mistake after I wrote about the problem.
