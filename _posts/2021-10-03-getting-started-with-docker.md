@@ -83,4 +83,4 @@ It will create a new image named test based off the alpine image. If we do `dock
 docker run -it test
 ```
 
-Yay! I guess that's my first docker image =p My next goal is to run php laravel on docker. There are images that provides that, but they seem to be so big (500MB+) I just want to see if it is possible to make a smaller one.
+Yay! I guess that's my first docker image =p My next goal is to run php laravel on docker. There are images that provides that, but they seem to be so big (500MB+) I just want to see if it is possible to make a smaller one. But maybe it's not a good idea, not something that I want to spend my time on... there are [alpine](https://hub.docker.com/_/php?tab=tags&page=1&ordering=last_updated&name=alpine) based ones. I think I can try the [bitnami one](https://hub.docker.com/r/bitnami/laravel) or try the official [Laravel Sail](https://laravel.com/docs/8.x#getting-started-on-macos).
