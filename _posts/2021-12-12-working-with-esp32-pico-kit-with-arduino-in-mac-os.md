@@ -14,7 +14,7 @@ On Macbook Pro 2016 (Mac OS Catalina), Board is `ESP32 Pico Kit`
 6. `Tools` -> `Board` -> `Boards Manager`, search for `ESP32` and click Install (I installed version 1.0.6)
 7. `Tools` -> `Board` -> `ESP32 Arduino` -> `ESP32 Pico Kit`, also select the appropriate `Upload Speed` (115200) and `Port` (`/dev/cu.SLAB_USBtoUART`)
 
-    {% include image name="esp32.png" %}
+    <img src="esp32.png" width="70%" />
 
 8. Test a hello world program
 
@@ -34,7 +34,7 @@ On Macbook Pro 2016 (Mac OS Catalina), Board is `ESP32 Pico Kit`
 
 ### Using multiple files
 
-{% include image name="arduino_ide.png" %}
+<img src="arduino_ide.png" width="70%" />
 
 Arduino Sketch is a folder, by default saved in `~/Documents/Arduino/sketch_<date>`. (I'm not really sure how it knows which is the main file, maybe by the `setup()` and `loop()` name)
 
@@ -44,3 +44,7 @@ Editing the files on Emacs will not automatically update the opened files in the
 
 
 - [[ref](https://www.hackster.io/shahizat005/getting-started-with-esp32-on-a-mac-4b3997)]
+
+### Next thing to learn
+
+- [Creating web server](https://randomnerdtutorials.com/esp32-web-server-arduino-ide/)
