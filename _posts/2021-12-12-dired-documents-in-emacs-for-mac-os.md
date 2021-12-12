@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dired Documents in Emacs for Mac OS
+tags: [mac, emacs]
 ---
 
 I don't usually open files from Documents folder in Emacs. But I was trying to open an Arduino files, which by default is created in Documents folder. And I found out I couldn't dired the Documents dir (Not sure if I was able to open the file). The error was:

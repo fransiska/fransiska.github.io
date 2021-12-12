@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Working with ESP32 Pico Kit with Arduino in Mac OS
+tags: [mac, arduino]
 ---
 
 On Macbook Pro 2016 (Mac OS Catalina), Board is `ESP32 Pico Kit`
