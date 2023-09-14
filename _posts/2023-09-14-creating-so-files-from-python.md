@@ -80,3 +80,14 @@ hellow/
 ```
 
 We can then copy the `example.py` elsewhere and run it without having the `hellow` folder in the same directory! Oh this is much simpler than I thought.
+
+For the cherry on top, we can also binarize the `example.py`
+
+```bash
+cd src
+cython example.py --embed # Creates example.c
+PYTHONLIBVER=python$(python3 -c 'import sys; print(".".join(map(str, sys.version_info[:2])))')$(python3-config --abiflags)
+gcc -Os $(python3-config --includes) example.c -o example $(python3-config --ldflags) -l$PYTHONLIBVER # creates example binary
+```
+
+The resulting `example` binary file can also be run from any folder.
